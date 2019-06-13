@@ -11,4 +11,12 @@ class TugasController extends Controller
         $data_tugas = \App\Tugas::all();
         return view ('tugas.index',['data_tugas' => $data_tugas]);
     }
+
+    public function create(Request $request)
+    {
+        \App\Tugas::create($request->all());
+        return redirect('/Tugas');
+        
+        
+    }
 }

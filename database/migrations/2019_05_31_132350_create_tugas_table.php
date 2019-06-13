@@ -19,6 +19,7 @@ class CreateTugasTable extends Migration
             $table->string('nama_pelajaran');
             $table->string('status_pengumpulan');
             $table->string('nama_guru');
+            $table->timestamps();
         });
     }
 

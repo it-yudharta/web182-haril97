@@ -19,3 +19,4 @@ Auth::routes();
 
 
 Route::get('/tugas','TugasController@index');
+Route::post('/tugas/create','TugasController@create');
