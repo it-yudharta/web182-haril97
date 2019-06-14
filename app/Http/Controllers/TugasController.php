@@ -15,7 +15,7 @@ class TugasController extends Controller
     public function create(Request $request)
     {
         \App\Tugas::create($request->all());
-        return redirect('/Tugas');
+        return redirect('/Tugas')->with('sukses');
         
         
     }

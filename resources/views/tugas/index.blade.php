@@ -50,19 +50,19 @@
       {{csrf_field()}}
   <div class="form-group">
     <label for="exampleInputEmail1">Nama Siswa</label>
-    <input nama siswa='nama_siswa' type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Nama Siswa">
+    <input name='nama_siswa' type="text" class="form-control" id="nama_siswa" aria-describedby="emailHelp" placeholder="Nama Siswa">
   </div>
   <div class="form-group">
     <label for="exampleInputEmail1">Nama Pelajaran</label>
-    <input nama pelajaran='nama_pelajaran' type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Nama Pelajaran">
+    <input name='nama_pelajaran' type="text" class="form-control" id="nama_pelajaran" aria-describedby="emailHelp" placeholder="Nama Pelajaran">
   </div>
   <div class="form-group">
     <label for="exampleInputEmail1">Status Pengumpulan</label>
-    <input status pengumpulan='status_pengumpulan' type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Status Pengumpulan">
+    <input name='status_pengumpulan' type="text" class="form-control" id="status_pengumpulan" aria-describedby="emailHelp" placeholder="Status Pengumpulan">
   </div>
   <div class="form-group">
     <label for="exampleInputEmail1">Nama Guru</label>
-    <input nama guru='nama_guru' type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Nama Guru">
+    <input name='nama_guru' type="text" class="form-control" id="nama_guru" aria-describedby="emailHelp" placeholder="Nama Guru">
   </div>
   
 
