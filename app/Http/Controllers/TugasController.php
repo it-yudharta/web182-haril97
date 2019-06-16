@@ -30,5 +30,12 @@ class TugasController extends Controller
         $tugas->update($request->all());
         return redirect('/tugas')->with('sukses','Data Berhasil Diupdate');
     }
+
+    public function delete($id)
+    {
+        $tugas=\App\Tugas::find($id);
+        $tugas->delete();
+        return redirect('/tugas')->with('sukses','Data Berhasil Dihapus');
+    }
 }
 
