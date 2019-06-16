@@ -19,3 +19,5 @@ Auth::routes();
 
 Route::get('/tugas','TugasController@index');
 Route::post('/tugas/create','TugasController@create');
+Route::get('/tugas/{id}/edit','TugasController@edit');
+Route::post('/tugas/{id}/update','TugasController@update');

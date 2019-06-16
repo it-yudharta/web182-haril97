@@ -15,8 +15,20 @@ class TugasController extends Controller
     public function create(Request $request)
     {
         \App\Tugas::create($request->all());
-        return redirect('/tugas')->with('sukses gan by muslikh');
-        
-        
+        return redirect('/tugas')->with('sukses','Data Berhasil Diinput');
+    }
+
+    public function edit($id)
+    {
+        $tugas=\App\Tugas::find($id);
+        return view('tugas/edit',['tugas'=>$tugas]);
+    }
+
+    public function update(Request $request,$id)
+    {
+        $tugas=\App\Tugas::find($id);
+        $tugas->update($request->all());
+        return redirect('/tugas')->with('sukses','Data Berhasil Diupdate');
     }
 }
+
