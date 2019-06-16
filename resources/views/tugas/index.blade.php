@@ -8,10 +8,10 @@
 </div>
 @endif
 <div class="row">
-<div class="col-12">
+<div class="col-6">
 <h1>DAFTAR PENGUMPULAN TUGAS</h1> 
 </div>
-<div class="col-12">
+<div class="col-6">
 <button type="button" class="btn btn-primary btn-sm float-right" data-toggle="modal" data-target="#exampleModal">
   Tambah Data Tugas
 </button>
@@ -20,21 +20,21 @@
 
 <table class='table table-hover'>
 <tr>
-<th>NAMA SISWA</th> 
-<th>NAMA PELAJARAN</th>
-<th>STATUS PENGUMPULAN</th>
-<th>NAMA GURU</th>
-<th>AKSI</th>
+      <th>NAMA SISWA</th> 
+      <th>NAMA PELAJARAN</th>
+      <th>STATUS PENGUMPULAN</th>
+      <th>NAMA GURU</th>
+      <th>AKSI</th>
 </tr> 
 @foreach($data_tugas as $tugas)
 <tr>
-<td>{{$tugas-> nama_siswa}}</td>
-<td>{{$tugas-> nama_pelajaran}}</td>
-<td>{{$tugas-> status_pengumpulan}}</td>
-<td>{{$tugas-> nama_guru}}</td>
+      <td>{{$tugas-> nama_siswa}}</td>
+      <td>{{$tugas-> nama_pelajaran}}</td>
+      <td>{{$tugas-> status_pengumpulan}}</td>
+      <td>{{$tugas-> nama_guru}}</td>
 <td>
     <a href="/tugas/{{$tugas->id}}/edit" class="btn btn-warning btn-sm">Edit</a>
-    <a href="/tugas/{{$tugas->id}}/delete" class="btn btn-warning btn-sm"onclick="return confirm('Apakah Anda Ingin Menghapus Data Ini?')">Delete</a>
+    <a href="/tugas/{{$tugas->id}}/delete" class="btn btn-danger btn-sm"onclick="return confirm('Apakah Anda Ingin Menghapus Data Ini?')">Delete</a>
 </td>
 </tr>
 @endforeach
